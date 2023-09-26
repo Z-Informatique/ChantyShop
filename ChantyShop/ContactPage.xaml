@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ChantyShop.ContactPage">
+    <VerticalStackLayout Padding="10"
+                         Spacing="10">
+        <Label 
+            Text="Contactez-nous"
+            FontSize="20"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" 
+            Margin="0,20,0,40"/>
+        
+        <Label Text="La boutique en ligne" FontSize="18" />
+        <Button Text="https://chantycp.fr"
+                Padding="0"
+                Background="Transparent" />
+        <Label Text="dontsop@chantycp.fr"
+               HorizontalOptions="Center" />
+
+        <Label Text="Contacter le développeur"
+               FontSize="18"
+               Margin="0,60,0,10" />
+        <Label Text="tsiazezephirin@gmail.com"
+               HorizontalOptions="Center" />
+        <Label Text="+242 06 944 61 93"
+               HorizontalOptions="Center" />
+        <Label Text="+242 04 457 22 05"
+               HorizontalOptions="Center" />
+        <Button Text="https://cma-gestion.chantycp.fr"
+                Padding="0"
+                Background="{StaticResource Gray300}"
+                HorizontalOptions="FillAndExpand"
+                VerticalOptions="EndAndExpand"/>
+    </VerticalStackLayout>
+</ContentPage>
