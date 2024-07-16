@@ -2,35 +2,110 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="ChantyShop.ContactPage">
-    <VerticalStackLayout Padding="10"
-                         Spacing="10">
-        <Label 
-            Text="Contactez-nous"
-            FontSize="20"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" 
-            Margin="0,20,0,40"/>
-        
-        <Label Text="La boutique en ligne" FontSize="18" />
-        <Button Text="https://chantycp.fr"
-                Padding="0"
-                Background="Transparent" />
-        <Label Text="dontsop@chantycp.fr"
-               HorizontalOptions="Center" />
+    <VerticalStackLayout Spacing="10">
+        <Border BackgroundColor="{StaticResource Primary}"
+                Padding="10"
+                StrokeThickness="0"
+                Margin="-5">
+            <Label Text="Chanty Shop"
+                   HorizontalOptions="Center"
+                   FontSize="Large"
+                   FontAttributes="Bold"
+                   TextColor="{StaticResource White}" />
+        </Border>
+        <ScrollView>
+            <StackLayout Spacing="10"
+                         Padding="20">
+                <Label Text="Notre service client est toujours heureux de pouvoir vous aider !"
+                       HorizontalOptions="StartAndExpand" />
+                <Label>
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <Span FontAttributes="Bold"
+                                  Text="Ouverture : " />
+                            <Span Text="Du lundi au vendredi (hors jours fériés)" />
+                        </FormattedString>
+                    </Label.FormattedText>
+                </Label>
+                <Label>
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <Span FontAttributes="Bold"
+                                  Text="Heure : " />
+                            <Span Text="08h30 - 19h30" />
+                        </FormattedString>
+                    </Label.FormattedText>
+                </Label>
+                <Label>
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <Span FontAttributes="Bold"
+                                  Text="Email : " />
+                            <Span Text="contact@chantycp.fr" />
+                        </FormattedString>
+                    </Label.FormattedText>
+                </Label>
+                <Label>
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <Span FontAttributes="Bold"
+                                  Text="Tél : " />
+                            <Span Text="+33 6 56 89 45 81" />
+                        </FormattedString>
+                    </Label.FormattedText>
+                </Label>
+               
+                <Label Text="Développeur"
+                       FontAttributes="Bold"
+                       FontSize="18" Margin="0,15"
+                       TextColor="{StaticResource Primary}"/>
 
-        <Label Text="Contacter le développeur"
-               FontSize="18"
-               Margin="0,60,0,10" />
-        <Label Text="tsiazezephirin@gmail.com"
-               HorizontalOptions="Center" />
-        <Label Text="+242 06 944 61 93"
-               HorizontalOptions="Center" />
-        <Label Text="+242 04 457 22 05"
-               HorizontalOptions="Center" />
-        <Button Text="https://cma-gestion.chantycp.fr"
-                Padding="0"
-                Background="{StaticResource Gray300}"
-                HorizontalOptions="FillAndExpand"
-                VerticalOptions="EndAndExpand"/>
+                <Label>
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <Span FontAttributes="Bold"
+                                  Text="Entreprise : " />
+                            <Span Text="CREATIVE MORE AFRICA" />
+                        </FormattedString>
+                    </Label.FormattedText>
+                </Label>
+                <Label>
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <Span FontAttributes="Bold"
+                                  Text="Téléphone 1 : " />
+                            <Span Text="+242 06 911 68 60" />
+                        </FormattedString>
+                    </Label.FormattedText>
+                </Label>
+                <Label>
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <Span FontAttributes="Bold"
+                                  Text="Téléphone 2 : " />
+                            <Span Text="+242 06 944 61 93" />
+                        </FormattedString>
+                    </Label.FormattedText>
+                </Label>
+                <Label>
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <Span FontAttributes="Bold"
+                                  Text="Email : " />
+                            <Span Text="contact@creative-more-africa.com" />
+                        </FormattedString>
+                    </Label.FormattedText>
+                </Label>
+                <Label>
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <Span FontAttributes="Bold"
+                                  Text="Site web : " />
+                            <Span Text="https://creative-more-africa.com" />
+                        </FormattedString>
+                    </Label.FormattedText>
+                </Label>
+            </StackLayout>
+        </ScrollView>
     </VerticalStackLayout>
 </ContentPage>

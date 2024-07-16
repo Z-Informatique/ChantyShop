@@ -1,25 +1,22 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="ChantyShop.MainPage"
-             xmlns:local="clr-namespace:ChantyShop.ViewModel"
-             NavigationPage.HasNavigationBar="False"
-             Shell.NavBarIsVisible="False">
+             x:Class="ChantyShop.Pages.CreativePage"
+             xmlns:local="clr-namespace:ChantyShop.ViewModel">
 
     <ContentPage.BindingContext>
-        <local:HomeViewModel />
+        <local:CreativeViewModel />
     </ContentPage.BindingContext>
 
     <RefreshView x:Name="refreshView"
-                 IsRefreshing="{Binding IsRefreshing}"
-                 Command="{Binding RefreshCommand}">
+                 IsRefreshing="{Binding IsCreativeRefreshing}"
+                 Command="{Binding RefreshCreativeCommand}">
         <ScrollView HorizontalOptions="FillAndExpand"
                     VerticalOptions="FillAndExpand">
             <StackLayout>
-                <WebView Source="{Binding SiteLink}"
+                <WebView Source="{Binding SiteCreativeLink}"
                          VerticalOptions="FillAndExpand" />
             </StackLayout>
         </ScrollView>
     </RefreshView>
-
 </ContentPage>

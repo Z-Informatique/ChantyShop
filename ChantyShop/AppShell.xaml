@@ -5,12 +5,14 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
        xmlns:local="clr-namespace:ChantyShop"
        xmlns:helpers="clr-namespace:ChantyShop.Helpers"
+       xmlns:page="clr-namespace:ChantyShop.Pages"
        Shell.FlyoutBehavior="Disabled"
-    Shell.NavBarIsVisible="False">
+       NavigationPage.HasNavigationBar="False"
+       Shell.NavBarIsVisible="False">
 
     
     <TabBar>
-        <Tab Title="Boutique">
+        <Tab Title="Chanty Shop">
             <Tab.Icon>
                 <FontImageSource 
                     FontFamily="materialfont"
@@ -22,7 +24,18 @@
                 Route="MainPage" />
         </Tab>
 
-        <Tab Title="Contact">
+        <Tab Title="Creative More">
+            <Tab.Icon>
+                <FontImageSource 
+                    FontFamily="materialfont"
+                    Glyph="{x:Static helpers:IconsClass.Web}"
+                    Size="24" />
+            </Tab.Icon>
+            <ShellContent 
+                ContentTemplate="{DataTemplate page:CreativePage}"
+                Route="ContactPage" />
+        </Tab>
+        <Tab Title="A propos">
             <Tab.Icon>
                 <FontImageSource 
                     FontFamily="materialfont"
